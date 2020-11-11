@@ -4,24 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login / Signup</title>
+  <title>Forum</title>
+  <link rel="stylesheet" href="css/global.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&display=swap');
+  </style>
 </head>
 
 <body>
 
-  <header>
-    <div class="menu-container">
-      <header class="header">
-        <a href="home.html"><img class="logo-header" src="../assets/icon-left-font.png" alt="groupomania logo"></a>
-        <nav class="menu">
-          <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="forum.html">Forum</a></li>
-            <li><a href="profile.html">Profile</a></li>
-          </ul>
-        </nav>
-        <img class="my-pp" src="../assets/ciri.jpg" alt="my-profile-picture">
-      </header>
+  <header class="top-header">
+    <div class="logo-header">
+      <a href="home.html"><img src="../assets/icon-left-font-monochrome-white.png" alt="groupomania logo"></a>
+    </div>
+    <div class="menu-header">
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="user-pp">
+      <img src="../assets/ciri.jpg" alt="my-profile-picture">
     </div>
   </header>
 
@@ -70,12 +76,11 @@
   </section>
 
   <footer>
-    <div class="mentions-légales">
+    <div id="legals">
       <a href="#">Legals</a>
-      <div class="contact">
-        <p>Something went wrong ?</p><br>
-        <a href="mailto:chips@mail.com">Let us know !</a>
-      </div>
+    </div>
+    <div id="contact-us">
+      <p>Something went wrong ? <a href="mailto:chips@mail.com">Let us know !</a></p>
     </div>
   </footer>
 
