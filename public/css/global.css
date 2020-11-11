@@ -13,8 +13,23 @@ h1 {
 }
 
 h2 {
-  color: red;
+  color: rgb(236, 57, 57);
   font-size: 21px;
+}
+
+.red {
+  font-weight: 600;
+  color: rgb(236, 57, 57);
+}
+
+.new-user > p {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.new-reaction > p {
+  margin-left: 10px;
+  margin-bottom: 20px;
 }
 
 .top-header {
@@ -41,7 +56,7 @@ header > .menu-header nav > ul > li {
   font-size: 24px;
   font-weight: 600;
   list-style: none;
-  margin: 10px;
+  margin: 30px;
 }
 
 header > .menu-header nav > ul > li a {
@@ -49,7 +64,7 @@ header > .menu-header nav > ul > li a {
   text-decoration: none;
 }
 
-header > .user-pp img {
+header > .my-pp img {
   margin: 20px;
   height: 95px;
   width: 95px;
@@ -207,10 +222,81 @@ button {
   text-transform: uppercase;
 }
 
+/* Post-mini Style */
+
+.post-mini {
+  margin: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  border: rgb(236, 57, 57) 2px solid;
+  border-radius: 10px;
+  height: 250px;
+}
+
+/* Author */
+
+.author {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+  background-color: rgb(236, 57, 57);
+  height: 250px;
+}
+
+.author .user-name-feed {
+  color: white;
+  font-weight: 600;
+}
+
 /* UserPP */
 
-.user-pp img {
-  width: 100px;
-  height: 100px;
+.user-pp {
+  width: 75%;
   border-radius: 99px;
+}
+
+/* Post-mini style */
+
+.content-mini {
+  padding: 15px;
+}
+
+.post-title {
+  font-size: 22px;
+  color: rgb(4, 86, 218);
+  align-self: flex-start;
+}
+
+.gif-mini {
+  width: 150px;
+}
+
+/* Forum post Style */
+
+.post {
+  margin: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  border: rgb(236, 57, 57) 2px solid;
+  border-radius: 10px;
+  max-height: auto;
+}
+
+.author-forum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(236, 57, 57);
+  min-height: auto;
+}
+
+.content {
+  padding: 15px;
+}
+
+.gif {
+  width: 320px;
 }
