@@ -1,11 +1,16 @@
-/*Global style*/
+/* Global style */
+html {
+  height: 100%;
+}
 
 body {
+  height: 100%;
   width: 100%;
   margin: 0;
   font-family: 'Dosis', sans-serif;
   font-size: 16px;
   font-weight: 500;
+  background-color: rgb(218, 232, 250);
 }
 
 h1 {
@@ -41,7 +46,7 @@ h2 {
   background-color: rgb(236, 57, 57);
 }
 
-/*Header Style*/
+/* Header Style */
 
 header > .logo-header {
   margin: 20px;
@@ -60,7 +65,7 @@ header > .menu-header nav > ul > li {
 }
 
 header > .menu-header nav > ul > li a {
-  color: white;
+  color: ghostwhite;
   text-decoration: none;
 }
 
@@ -71,7 +76,7 @@ header > .my-pp img {
   border-radius: 99px;
 }
 
-/*Footer Style*/
+/* Footer Style */
 
 footer {
   display: flex;
@@ -79,6 +84,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: rgb(236, 57, 57);
+  margin-top: 40px;
 }
 
 footer > #legals {
@@ -104,14 +110,13 @@ footer > #contact-us a {
 }
 
 .container {
-  background-color: ghostwhite;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
 
-/*Button Style*/
+/* Button Style */
 
 button {
   width: 60px;
@@ -125,7 +130,7 @@ button {
   color: white;
 }
 
-/*Popup Style*/
+/* Popup Style */
 
 .popup {
   max-width: 320px;
@@ -145,7 +150,6 @@ button {
   display: flex;
   justify-content: space-around;
   flex-flow: row nowrap;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -222,44 +226,47 @@ button {
   text-transform: uppercase;
 }
 
-/* Post-mini Style */
+/* post Style */
 
-.post-mini {
+.post {
   margin: 10px;
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
-  border: rgb(236, 57, 57) 2px solid;
+  align-items: stretch;
+  box-shadow: rgba(0, 0, 0, 0.356) -1px 1px 0.2em;
   border-radius: 10px;
-  height: 250px;
+  background-color: white;
+  overflow: hidden;
 }
 
 /* Author */
 
 .author {
+  padding-top: 20px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;  
+  flex-flow: column nowrap;
   align-items: center;
+  flex: 0 0 120px;
+  width: 120px;
   background-color: rgb(236, 57, 57);
-  height: 250px;
 }
 
 .author .user-name-feed {
   color: white;
   font-weight: 600;
+  text-align: center;
 }
 
 /* UserPP */
 
 .user-pp {
-  width: 75%;
+  width: 90px;
   border-radius: 99px;
 }
 
-/* Post-mini style */
+/* Post content style */
 
-.content-mini {
+.content {
   padding: 15px;
 }
 
@@ -273,30 +280,37 @@ button {
   width: 150px;
 }
 
-/* Forum post Style */
+.gif {
+  width: 400px;
+}
 
-.post {
-  margin: 10px;
+/* Profile style */
+
+.user-profile {
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
-  border: rgb(236, 57, 57) 2px solid;
-  border-radius: 10px;
-  max-height: auto;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
-.author-forum {
+.user-profile > #profile-pct {
+  padding: 20px;
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   align-items: center;
-  background-color: rgb(236, 57, 57);
-  min-height: auto;
 }
 
-.content {
-  padding: 15px;
+.user-profile > #profile-pct > img {
+  padding: 40px;
+  width: 200px;
+  border-radius: 999px;
 }
 
-.gif {
-  width: 320px;
+.user-profile > #user-infos {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 20px;
+  width: 500px;
 }

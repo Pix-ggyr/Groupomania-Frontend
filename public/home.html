@@ -9,6 +9,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700&display=swap');
   </style>
+  <script src="https://kit.fontawesome.com/dac98d5ff4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -27,7 +28,7 @@
       </nav>
     </div>
     <div class="my-pp">
-      <img src="../assets/ciri.jpg" alt="my-profile-picture">
+      <a href="/public/profile.html"><img src="../assets/ciri.jpg" alt="my-profile-picture"></a>
     </div>
   </header>
 
@@ -36,13 +37,14 @@
     <h1>Welcome <span class="red">Jeanne</span> ! How are you today ?</h1>
     <h2>Here you'll find the latest news</h2>
     <button class="post-now-btn"><a href="forum.html">Go to main discussion !</a></button>
+
     <div class="news-feed">
-      <div class="post-mini">
+      <div class="post">
         <div class="author">
           <img class="user-pp" src="../assets/male-user-1.jpg" alt="male-user-1">
           <p class="user-name-feed">Alexis Poulet</p>
         </div>
-        <div class="content-mini">
+        <div class="content">
           <h3 class="post-title">post-title-blablablabla</h3>
           <img class="gif-mini"
             src="https://media1.tenor.com/images/4be9b01498c57513dedbc82787394f4d/tenor.gif?itemid=5687427"
@@ -55,27 +57,27 @@
       </div>
 
       <div class="new-user">
-        <p><span class="red">Martin Gary</span> has join our community !</p>
+        <p><i class="fas fa-user-check"></i><span class="red"> Martin Gary</span> has join our community !</p>
       </div>
       <div class="new-reaction">
-        <p><span class="red">Alexis Poulet</span> just reacted to a post !</p>
+        <p><i class="fas fa-clipboard-list"></i><span class="red"> Alexis Poulet</span> just reacted to a post !</p>
       </div>
       <div class="new-reaction">
-        <p><span class="red">John Sembranle</span> just reacted to a post !</p>
+        <p><i class="fas fa-clipboard-list"></i><span class="red"> John Sembranle</span> just reacted to a post !</p>
       </div>
       <div class="new-user">
-        <p><span class="red">Isabelle Deray</span> has join our community !</p>
+        <p><i class="fas fa-user-check"></i><span class="red"> Isabelle Deray</span> has join our community !</p>
       </div>
       <div class="new-reaction">
-        <p><span class="red">Alexis Poulet</span> just reacted to a post !</p>
+        <p><i class="fas fa-clipboard-list"></i><span class="red"> Alexis Poulet</span> just reacted to a post !</p>
       </div>
 
-      <div class="post-mini">
+      <div class="post">
         <div class="author">
           <img class="user-pp" src="../assets/woman-user-1.jpg" alt="woman-user-1">
-          <p class="user-name-feed">Catherine de Médicis</p>
+          <p class="user-name-feed">Catherine Prada</p>
         </div>
-        <div class="content-mini">
+        <div class="content">
           <h3 class="post-title">post-title-blblblblblblblblblblbl</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin lacus felis, sed efficitur
             ligula
@@ -85,15 +87,15 @@
       </div>
 
       <div class="new-user">
-        <p><span class="red">Simon Duprès</span> has join our community !</p>
+        <p><i class="fas fa-user-check"></i><span class="red"> Simon Duprès</span> has join our community !</p>
       </div>
 
-      <div class="post-mini">
+      <div class="post">
         <div class="author">
           <img class="user-pp" src="../assets/male-user-2.png" alt="male-user-2">
           <p class="user-name-feed">Florian Duprès</p>
         </div>
-        <div class="content-mini">
+        <div class="content">
           <h3 class="post-title">post-title-nianianianiania</h3>
           <img class="gif-mini"
             src="https://media1.tenor.com/images/a6d4ffb42e9cfa929a337b7fd12398e1/tenor.gif?itemid=5648885"
@@ -101,12 +103,12 @@
         </div>
       </div>
 
-      <div class="post-mini">
+      <div class="post">
         <div class="author">
           <img class="user-pp" src="../assets/cat-user.jpg" alt="cat-user">
           <p class="user-name-feed">John Sembranle</p>
         </div>
-        <div class="content-mini">
+        <div class="content">
           <h3 class="post-title">post-title-miaou-miaou-miaou-miaou</h3>
           <img class="gif-mini"
             src="https://media1.tenor.com/images/1296a75b4b5fbde10c3d95c44c9f5e97/tenor.gif?itemid=4621441"
@@ -119,7 +121,7 @@
       </div>
 
       <div class="new-user">
-        <p><span class="red">John Sembranle</span> has join our community !</p>
+        <p><i class="fas fa-user-check"></i><span class="red"> John Sembranle</span> has join our community !</p>
       </div>
 
     </div>
@@ -147,6 +149,11 @@
   .post-now-btn a {
     color: white;
     text-decoration: none;
+  }
+
+  i {
+    color: darkblue;
+    padding: 3px;
   }
 </style>
 
