@@ -222,6 +222,10 @@ button {
   margin-bottom: 20px;
 }
 
+.popup > .popup-form > #create-post-content {
+  height: 156px;
+}
+
 .popup > .popup-form > .popup-submit-btn > input {
   width: 120px;
   height: 36px;
